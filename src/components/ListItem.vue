@@ -21,7 +21,7 @@ export default {
   props: ['task'],
   methods: {
     check () {
-      this.task.checked = !this.task.checked
+      this.task.checked = true
       this.$emit('check')
     },
     humanize: (date) => moment(date).locale('es').fromNow()
